@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.hoverable {
+    width: 900px;
+    height: 90px;
+    background-size: cover;
+    display: block;
+}
+
+.curtain {
+    background-color: royalblue;
+    width: inherit;
+    height: inherit;
+    position: relative;
+    opacity: 0.8;
+    
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.curtain:hover {
+    opacity: 0.8;
+}
+
+p {
+    position: relative;
+    width: inherit;
+    padding-top: 26px;
+    text-align: center;
+    font-family: verdana;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 31px;
+}
