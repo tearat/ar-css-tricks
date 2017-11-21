@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.raidap {
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+  font-family: 'Roboto Condensed', sans-serif;
+  min-width: 100px;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+}
+.raidap.test .col1,
+.raidap.test .col2,
+.raidap.test .col3,
+.raidap.test .col4,
+.raidap.test .col5,
+.raidap.test .col6,
+.raidap.test .col7,
+.raidap.test .col8,
+.raidap.test .col9,
+.raidap.test .col10,
+.raidap.test .col11,
+.raidap.test .col12,
+.raidap.test .col {
+  background-color: peachpuff;
+}
+.raidap *.up {
+  text-transform: uppercase;
+}
+.raidap *.cap {
+  text-transform: capitalize;
+}
+.raidap *.bold {
+  font-weight: 600;
+}
+.raidap nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.raidap nav ul {
+  margin: 0;
+  list-style: none;
+}
+.raidap nav ul a {
+  text-decoration: none;
+}
+.raidap nav ul li {
+  padding: 10px 0 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  transition: 0.25s ease;
+}
+.raidap h1,
+.raidap h2,
+.raidap h3,
+.raidap h4,
+.raidap h5,
+.raidap h6,
+.raidap p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+}
+.raidap h1.center,
+.raidap h2.center,
+.raidap h3.center,
+.raidap h4.center,
+.raidap h5.center,
+.raidap h6.center,
+.raidap p.center {
+  text-align: center;
+}
+.raidap h1.right,
+.raidap h2.right,
+.raidap h3.right,
+.raidap h4.right,
+.raidap h5.right,
+.raidap h6.right,
+.raidap p.right {
+  text-align: right;
+}
+.raidap p {
+  line-height: 1.25em;
+}
+.raidap .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.raidap .box .col1,
+.raidap .box .col2,
+.raidap .box .col3,
+.raidap .box .col4,
+.raidap .box .col5,
+.raidap .box .col6,
+.raidap .box .col7,
+.raidap .box .col8,
+.raidap .box .col9,
+.raidap .box .col10,
+.raidap .box .col11,
+.raidap .box .col12,
+.raidap .box .col {
+  flex: auto;
+  text-align: left;
+  margin: 1.5px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 0.15%;
+  margin-right: 0.15%;
+}
+.raidap .box .col1 img,
+.raidap .box .col2 img,
+.raidap .box .col3 img,
+.raidap .box .col4 img,
+.raidap .box .col5 img,
+.raidap .box .col6 img,
+.raidap .box .col7 img,
+.raidap .box .col8 img,
+.raidap .box .col9 img,
+.raidap .box .col10 img,
+.raidap .box .col11 img,
+.raidap .box .col12 img,
+.raidap .box .col img {
+  width: 100%;
+}
+.raidap .box .col1 img.round,
+.raidap .box .col2 img.round,
+.raidap .box .col3 img.round,
+.raidap .box .col4 img.round,
+.raidap .box .col5 img.round,
+.raidap .box .col6 img.round,
+.raidap .box .col7 img.round,
+.raidap .box .col8 img.round,
+.raidap .box .col9 img.round,
+.raidap .box .col10 img.round,
+.raidap .box .col11 img.round,
+.raidap .box .col12 img.round,
+.raidap .box .col img.round {
+  border-radius: 50%;
+}
+.raidap .box .col1.center,
+.raidap .box .col2.center,
+.raidap .box .col3.center,
+.raidap .box .col4.center,
+.raidap .box .col5.center,
+.raidap .box .col6.center,
+.raidap .box .col7.center,
+.raidap .box .col8.center,
+.raidap .box .col9.center,
+.raidap .box .col10.center,
+.raidap .box .col11.center,
+.raidap .box .col12.center,
+.raidap .box .col.center {
+  text-align: center;
+}
+.raidap .box .col1.right,
+.raidap .box .col2.right,
+.raidap .box .col3.right,
+.raidap .box .col4.right,
+.raidap .box .col5.right,
+.raidap .box .col6.right,
+.raidap .box .col7.right,
+.raidap .box .col8.right,
+.raidap .box .col9.right,
+.raidap .box .col10.right,
+.raidap .box .col11.right,
+.raidap .box .col12.right,
+.raidap .box .col.right {
+  text-align: right;
+}
+.raidap .box .col1 {
+  width: 8%;
+}
+.raidap .box .col2 {
+  width: 14%;
+}
+.raidap .box .col3 {
+  width: 24%;
+}
+.raidap .box .col4 {
+  width: 32%;
+}
+.raidap .box .col5 {
+  width: 36%;
+}
+.raidap .box .col6 {
+  width: 48%;
+}
+.raidap .box .col7 {
+  width: 56%;
+}
+.raidap .box .col8 {
+  width: 64%;
+}
+.raidap .box .col9 {
+  width: 68%;
+}
+.raidap .box .col10 {
+  width: 72%;
+}
+.raidap .box .col11 {
+  width: 90%;
+}
+.raidap .box .col12 {
+  width: 100%;
+}
+.raidap .box .col {
+  width: auto;
+}
