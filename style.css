@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    background-color: gainsboro;
+    margin: 0 auto;
+    min-width: 200px;
+    max-width: 960px;
+    display: grid;
+/*    grid-template-columns: 2fr 1fr 1fr 30px;*/
+/*    grid-template-columns: minmax(150px,250px) repeat(3, 1fr) 30px;*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(60px,auto);
+/*    grid-auto-flow: column;*/
+/*    grid-template-rows: 12fr 1fr 1fr;*/
+}
+
+.item:nth-child(1) {
+/*    grid-column-start: 1;*/
+/*    grid-column-end: -1;*/
+    grid-column: 1 / -1;
+/*    align-self: center;*/
+/*    justify-self: center;*/
+}
+
+.item:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.item:nth-child(3) {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.item {
+    border-radius: 10px;
+    background-color: dimgray;
+    color: white;
+    padding: 10px;
+}
+
+.item:nth-child(2n) {
+    background-color: crimson;
+}
+
+/**/
+
+.second-grid {
+    margin: 0 auto;
+    margin-top: 40px;
+    min-width: 200px;
+    max-width: 960px;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(60px,auto);
+    grid-template-areas: 
+        "header header"
+        "article test"
+        "article ."
+        "footer footer"
+}
+
+.header,.article,.test,.footer {
+    padding: 10px;
+}
+
+.header {
+    background-color: crimson;
+    color: white;
+    grid-area: header;
+}
+
+.article {
+    background-color: crimson;
+    color: white;
+    grid-area: article;
+}
+
+.test {
+    background-color: crimson;
+    color: white;
+    grid-area: test;
+}
+
+.footer {
+    background-color: crimson;
+    color: white;
+    grid-area: footer;
+}
