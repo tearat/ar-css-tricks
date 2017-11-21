@@ -16,6 +16,7 @@ a:hover {
     width: 900px;
     height: 90px;
     background-size: cover;
+    background-position: center;
     display: block;
 }
 
