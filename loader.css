@@ -1,0 +1,81 @@
+.wrapper {
+    margin-left: calc(50% - 50px);
+    margin-top: 425px;
+}
+
+/*////////////*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+
+#loader {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.elem {
+/*    position: relative;*/
+    position: absolute;
+    left: 50px;
+    top: 36px;
+    
+    width: 2px;
+    height: 30px;
+    background-color: crimson;
+    box-shadow: 0 0 25px white;
+    border-radius: 25%;
+    opacity: 0;
+    
+    animation: 1s rotate linear infinite;
+}
+
+@keyframes rotate {
+    0% { opacity: 0 }
+    25% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.e1 { 
+    transform: rotate(0deg) translateY(25px);
+    animation-delay: 0.125s;
+}
+
+.e2 { 
+    transform: rotate(45deg) translateY(25px);
+    animation-delay: 0.250s;
+}
+
+.e3 { 
+    transform: rotate(90deg) translateY(25px);
+    animation-delay: 0.375s;
+}
+
+.e4 { 
+    transform: rotate(135deg) translateY(25px);
+    animation-delay: 0.500s;
+}
+
+.e5 { 
+    transform: rotate(180deg) translateY(25px);
+    animation-delay: 0.625s;
+}
+
+.e6 { 
+    transform: rotate(225deg) translateY(25px);
+    animation-delay: 0.750s;
+}
+
+.e7 { 
+    transform: rotate(270deg) translateY(25px);
+    animation-delay: 0.875s;
+}
+
+.e8 { 
+    transform: rotate(315deg) translateY(25px);
+    animation-delay: 1.000s;
+}
