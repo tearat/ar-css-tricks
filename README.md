@@ -8,3 +8,4 @@ My CSS tricks collection:
 - [raidap](https://github.com/teraaret/ar-css-tricks/tree/raidap)
 - [pixel-bg](https://github.com/teraaret/ar-css-tricks/tree/pixel-bg)
 - [display-grid](https://github.com/teraaret/ar-css-tricks/tree/display-grid)
+- [loader](https://github.com/teraaret/ar-css-tricks/tree/loader)
