@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AR slider</title>
+    <link rel="stylesheet" href="ar_slider.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div id="ar_slider">
+           
+            <div class="top">
+                <button class="prev">&#60;</button>
+                <ul>
+                    <a href=""><li><img src="img/01.jpg"></li></a>
+                    <a href=""><li><img src="img/02.jpg"></li></a>
+                    <a href=""><li><img src="img/03.jpg"></li></a>
+                </ul>
+                <button class="next">&#62;</button>
+            </div>
+            
+            <div class="panel">
+                <ul>
+                    <li><img src="img/01.jpg"></li>
+                    <li><img src="img/02.jpg"></li>
+                    <li><img src="img/03.jpg"></li>
+                </ul>
+            </div>
+            
+        </div>
+    
+    </div>
+    
+    <script src="ar_slider.js"></script>
+    <script>
+        ar_slider({
+            el: '#ar_slider',
+            width: 800, 
+            height: 300,
+            auto: true
+        });
+    </script>
+    
+</body>
+</html>

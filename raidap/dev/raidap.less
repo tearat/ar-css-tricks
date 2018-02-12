@@ -1,0 +1,114 @@
+// version 0.0.4
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+//@media screen and (min-width: 960px) {
+//    .container {
+//        width: 960px;
+//    }
+//}
+//
+//@media screen and (max-width: 960px) {
+//    .container {
+//        width: 100vw;
+//    }
+//}
+
+.raidap {
+    // official fonts
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+    font-family: 'Roboto Condensed', sans-serif;
+    
+    // adaptives
+    min-width: 100px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100%;
+    
+    &.test {
+        .col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11,.col12,.col {
+            background-color: peachpuff;
+        }
+    }
+    
+    * {
+        &.up { text-transform: uppercase; }
+        &.cap { text-transform: capitalize; }
+        &.bold { font-weight: 600; }
+    }
+    
+    nav {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        ul {
+            margin: 0;
+            list-style: none;
+            a {
+                text-decoration: none;
+            }
+            li {
+                padding: 10px 0 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                
+                display: inline-block;
+                transition: 0.25s ease;
+            }
+        }
+    }
+
+    h1,h2,h3,h4,h5,h6,p { 
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+        &.center { text-align: center; }
+        &.right { text-align: right; }
+    }
+    p {
+        line-height: 1.25em;
+    }
+    
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        .col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11,.col12,.col {
+            flex: auto;
+            text-align: left;
+            margin: 1.5px 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 0.15%;
+            margin-right: 0.15%;
+            
+            img {
+                width: 100%;
+                &.round { border-radius: 50%; }
+            }
+            
+            &.center { text-align: center; }
+            &.right { text-align: right; }
+        }
+        
+        .col1  { width: 8%;   }
+        .col2  { width: 14%;  }
+        .col3  { width: 24%;  }
+        .col4  { width: 32%;  }
+        .col5  { width: 36%;  }
+        .col6  { width: 48%;  }
+        .col7  { width: 56%;  }
+        .col8  { width: 64%;  }
+        .col9  { width: 68%;  }
+        .col10 { width: 72%;  }
+        .col11 { width: 90%;  }
+        .col12 { width: 100%; }
+        .col   { width: auto; }
+    }
+}

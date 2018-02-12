@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body onmousemove="checkPos(event)">
+    <div id="parallax">
+        <img src="hexa.png" class="frame framea">
+        <img src="hex9.png" class="frame frame9">
+        <img src="hex8.png" class="frame frame8">
+        <img src="hex7.png" class="frame frame7">
+        <img src="hex6.png" class="frame frame6">
+        <img src="hex5.png" class="frame frame5">
+        <img src="hex4.png" class="frame frame4">
+        <img src="hex3.png" class="frame frame3">
+        <img src="hex2.png" class="frame frame2">
+        <img src="hex.png"  class="frame frame1">
+    </div>
+    
+    <script>
+    
+        $(document).ready(function($){
+            var frames = document.getElementsByClassName("frame");
+            for (var i = 0; i < frames.length; i++) {
+                frames[i].style.opacity = 0.1+(i/10);
+                console.log(frames[i]);
+            }
+        });
+
+        
+        function checkPos(event) {
+            var cursorX = event.clientX;
+            var windowX = window.innerWidth;
+            var marginX = windowX/2-500;
+            $(".frame1").css("left", marginX + ( ( cursorX-(windowX/2) )/2  )+"px");
+            $(".frame2").css("left", marginX + ( ( cursorX-(windowX/2) )/4  )+"px");
+            $(".frame3").css("left", marginX + ( ( cursorX-(windowX/2) )/6  )+"px");
+            $(".frame4").css("left", marginX + ( ( cursorX-(windowX/2) )/8  )+"px");
+            $(".frame5").css("left", marginX + ( ( cursorX-(windowX/2) )/10 )+"px");
+            $(".frame6").css("left", marginX + ( ( cursorX-(windowX/2) )/12 )+"px");
+            $(".frame7").css("left", marginX + ( ( cursorX-(windowX/2) )/14 )+"px");
+            $(".frame8").css("left", marginX + ( ( cursorX-(windowX/2) )/16 )+"px");
+            $(".frame9").css("left", marginX + ( ( cursorX-(windowX/2) )/18 )+"px");
+            $(".framea").css("left", marginX + ( ( cursorX-(windowX/2) )/20 )+"px");
+            
+            var cursorY = event.clientY;
+            var windowY = window.innerHeight;
+            var marginY = windowY/2-500;
+            $(".frame1").css("top", marginY + ( ( cursorY-(windowY/2) )/2  )+"px");
+            $(".frame2").css("top", marginY + ( ( cursorY-(windowY/2) )/4  )+"px");
+            $(".frame3").css("top", marginY + ( ( cursorY-(windowY/2) )/6  )+"px");
+            $(".frame4").css("top", marginY + ( ( cursorY-(windowY/2) )/8  )+"px");
+            $(".frame5").css("top", marginY + ( ( cursorY-(windowY/2) )/10 )+"px");
+            $(".frame6").css("top", marginY + ( ( cursorY-(windowY/2) )/12 )+"px");
+            $(".frame7").css("top", marginY + ( ( cursorY-(windowY/2) )/14 )+"px");
+            $(".frame8").css("top", marginY + ( ( cursorY-(windowY/2) )/16 )+"px");
+            $(".frame9").css("top", marginY + ( ( cursorY-(windowY/2) )/18 )+"px");
+            $(".framea").css("top", marginY + ( ( cursorY-(windowY/2) )/20 )+"px");
+        }
+        
+    </script>
+</body>
+</html>

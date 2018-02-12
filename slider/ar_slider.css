@@ -1,0 +1,87 @@
+#ar_slider {
+    position: absolute;
+    display: inline-block;
+/*    width: 600px;*/
+}
+
+#ar_slider .top ul, #ar_slider .top li, #ar_slider .top button {
+    margin: 0;
+    padding: 0;
+}
+
+#ar_slider .top ul {
+    list-style: none;
+}
+
+#ar_slider .top li {
+    position: absolute;
+/*    width: 600px;*/
+}
+
+#ar_slider .top img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#ar_slider .top button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    width: 40px;
+/*    height: 200px;*/
+    font-size: 40px;
+    transition: 0.25s ease;
+    cursor: pointer;
+    color: #111;
+    opacity: 0.25;
+}
+
+#ar_slider .top button:hover {
+    opacity: 1;
+}
+
+#ar_slider .top button.prev {
+    top: 0;
+    left: -40px;
+    text-align: left;
+}
+
+#ar_slider .top button.next {
+/*    left: 600px;*/
+    text-align: right;
+}
+
+#ar_slider .top button:active, #ar_slider .top button:focus {
+    outline: none;
+}
+
+/*///*/
+
+#ar_slider .panel {
+    position: absolute;
+    top: 300px;
+    margin-top: 5px;
+}
+
+#ar_slider .panel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 800px;
+    text-align: center;
+}
+
+#ar_slider .panel ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#ar_slider .panel ul li img {
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+    object-fit: cover;
+}
