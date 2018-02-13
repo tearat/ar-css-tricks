@@ -4,44 +4,58 @@
     <meta charset="UTF-8">
     <title>AR slider</title>
     <link rel="stylesheet" href="ar_slider.css">
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
         
-        <div id="ar_slider">
-           
-            <div class="top">
-                <button class="prev">&#60;</button>
-                <ul>
-                    <a href=""><li><img src="img/01.jpg"></li></a>
-                    <a href=""><li><img src="img/02.jpg"></li></a>
-                    <a href=""><li><img src="img/03.jpg"></li></a>
-                </ul>
-                <button class="next">&#62;</button>
-            </div>
-            
-            
-            <div class="panel">
-                <ul>
-                    <li><img src="img/01.jpg"></li>
-                    <li><img src="img/02.jpg"></li>
-                    <li><img src="img/03.jpg"></li>
-                </ul>
-            </div>
-            
+    <div id="ar_slider">
+
+        <div class="top">
+            <button class="prev">&#60;</button>
+            <ul>
+<!--                <a href="#"><li><img src="img/01.jpg"></li></a>-->
+<!--                <a href="#"><li><img src="img/02.jpg"></li></a>-->
+<!--                <a href="#"><li><img src="img/03.jpg"></li></a>-->
+<!--                <a href="#"><li><img src="img/04.jpg"></li></a>-->
+<!--                <a href="#"><li><img src="img/05.jpg"></li></a>-->
+<!--                <a href="#"><li><img src="img/06.jpg"></li></a>-->
+            </ul>
+            <button class="next">&#62;</button>
         </div>
-    
+
+        <div class="panel">
+            <ul>
+<!--
+                <li><img src="img/01.jpg"></li>
+                <li><img src="img/02.jpg"></li>
+                <li><img src="img/03.jpg"></li>
+                <li><img src="img/04.jpg"></li>
+                <li><img src="img/05.jpg"></li>
+                <li><img src="img/06.jpg"></li>
+-->
+            </ul>
+        </div>
+
     </div>
     
     <script src="ar_slider.js"></script>
     <script>
         ar_slider({
             el: '#ar_slider',
+            images: [
+                'img/01.jpg',
+                'img/02.jpg',
+                'img/03.jpg',
+                'img/04.jpg',
+                'img/05.jpg',
+                'img/06.jpg'
+            ],
             width: 800, 
             height: 300,
-            auto: true
+            panel: true,
+            arrows: true,
+            auto: false,
+            interval: 4000  
         });
     </script>
     

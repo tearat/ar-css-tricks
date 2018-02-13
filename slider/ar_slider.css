@@ -1,4 +1,5 @@
 #ar_slider {
+    margin-left: 50px;
     position: absolute;
     display: inline-block;
 /*    width: 600px;*/
@@ -60,16 +61,24 @@
 
 #ar_slider .panel {
     position: absolute;
-    top: 300px;
-    margin-top: 5px;
+/*    top: 300px;*/
+/*    margin-top: 5px;*/
+/*    background-color: blue;*/
+    overflow: hidden;
+/*    width: 800px;*/
 }
 
 #ar_slider .panel ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 800px;
-    text-align: center;
+/*    width: 800px;*/
+/*    text-align: center;*/
+/*    margin-left: 100px;*/
+    transition: 0.2s ease;
+    overflow: hidden;
+/*    background-color: green;*/
+    height: 60px;
 }
 
 #ar_slider .panel ul li {
@@ -77,6 +86,18 @@
     padding: 0;
     display: inline-block;
     cursor: pointer;
+    transition: 0.2s ease;
+    filter: grayscale(0.9);
+}
+
+#ar_slider .panel ul li:hover {
+    filter: brightness(1.25);
+}
+
+#ar_slider .panel ul li.current {
+    height: 60px;
+    filter: none;
+/*    box-shadow: 0 0 0 4px red;*/
 }
 
 #ar_slider .panel ul li img {
